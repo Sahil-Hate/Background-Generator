@@ -14,8 +14,11 @@ function getRandomColor(){
     return color;
 }
 
-var col1 = getRandomColor();
-var col2 = getRandomColor();
+function showRandomColor(){
+    var col1 = getRandomColor();
+    var col2 = getRandomColor();
+    body.style.background = "linear-gradient(to right," + col1+", " + col2 + " )";
+}
 
 function backgroundColor(){
     body.style.background = "linear-gradient(to right," + color1.value +", " + color2.value + " )";
@@ -27,4 +30,3 @@ function backgroundColor1(){
 
 color1.addEventListener("input",backgroundColor);
 color2.addEventListener("input",backgroundColor);
-button.addEventListener("click",backgroundColor1);
