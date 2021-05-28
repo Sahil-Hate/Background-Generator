@@ -23,8 +23,11 @@ h2{
     letter-spacing: .1em;
     color: rgba(0, 0, 0, 0.5);
     font: 900 1.95em 'Times New Roman', Times, serif;
+    margin-top: 15px;
 }
 
 .btn-primary{
     margin-top: 10px;
+    background-color: #ff6700;
+    font-weight: 900;
 }
