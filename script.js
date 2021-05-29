@@ -3,7 +3,8 @@ var color1 = document.querySelector(".color1");
 var color2 = document.querySelector(".color2");
 var body = document.getElementById("gradient");
 var button = document.querySelector(".btn-primary");
-console.log(button);
+var c1 = document.querySelector(".color1");
+var c2 = document.querySelector(".color2");
 
 function getRandomColor(){
     var letters = '0123456789ABCDEF';
@@ -17,6 +18,8 @@ function getRandomColor(){
 function showRandomColor(){
     var col1 = getRandomColor();
     var col2 = getRandomColor();
+    c1.value = col1;
+    c2.value = col2;
     body.style.background = "linear-gradient(to right," + col1+", " + col2 + " )";
 }
 
